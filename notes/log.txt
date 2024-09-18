@@ -1,0 +1,27 @@
+Created instance
+Installed NodeJS via https://nodejs.org/en/download/package-manager 
+Created a directory for project
+Created backend folder
+Created server.js file
+Command: npm init -y
+Added basic server code to server.js
+Command: npm install -g nodemon => [Installed Nodemon globally]
+
+9/16/2024
+Opened VS Code and Setup SSH for VS Code
+Started by created the config file and setting up my configuration
+C:\Users\andya\.ssh\config
+Attempted to SSH via VS Code and was given an error that my permissions for the pem key were to loose
+Went into permissions, and ensured I am the owner of the file: Andy Almeida (andyalmeida191@gmail.com)
+Removed the permissions for Admin and System and Users
+SSHed again and it worked
+Created a dev script in package.json to run nodemon so i can edit code and save and it will update the code
+Downloaded Material Icon Theme for VS Code to get icons on the explorer
+Created a .env file and added PORT
+Command: npm install dotenv
+Added PORT via the .env file to the code
+Setup the Port for reaching my website:
+Edited inbound rules on EC2 Security Group
+Created an Inbound rule for Any TCP for port 4000
+I was now able to connect to website using IP:4000
+Using systemmd to keep app running at all times

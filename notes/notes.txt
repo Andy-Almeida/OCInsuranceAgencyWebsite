@@ -1,0 +1,2 @@
+To run a file, enter: node [FILENAME]
+ex: node server.js
