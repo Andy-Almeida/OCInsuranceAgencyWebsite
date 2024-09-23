@@ -1,0 +1,12 @@
+htmltag#id -> <htmltag id="">
+htmltag.class -> <htmltag class ="">
+#id -> <div id="">
+.class -> <div class="">
+
+attributes
+input -> <input>
+input(type="password" name="inpPwd" data-js=`$( 5 > 2 ? "OK" : "NOT OK!" )`) -> <input type="password" name="inpPwd" data-js"OK">
+
+-const myClasses = ["class1", "class2", "class3"]
+div(class=myClasses) -> <div class="class1 class2 class3">
+div.my-div(class=myClasses) -> <div class="my-class class1 class2 class3">

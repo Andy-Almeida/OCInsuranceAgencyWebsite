@@ -1,0 +1,131 @@
+#CompanyLogoIcon {
+    width: 11rem;
+    background-image: url('../images/FirstLogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-self: center;
+    min-width: 9rem;
+    min-height: 3rem;
+}
+
+header{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: 40% 60%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    position: relative; /* Ensure the pseudo-element is positioned relative to the link */
+}
+
+/* Add down arrow to Products and About menu items */
+nav ul li:nth-child(2) a::after, /* Products */
+nav ul li:nth-child(3) a::after { /* About */
+    content: '▼'; /* Unicode character for down arrow */
+    font-size: 12px; /* Adjust size as needed */
+    position: absolute;
+    right: -15px; /* Adjust position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul li:nth-child(4){
+  color: blue;
+  margin-left: 1rem;
+}
+
+@media (max-width: 1200px) {
+  header{
+    justify-content: center;
+  }
+}
+
+/* Small screens (up to 991px) */
+@media (max-width: 991px) {
+  header {
+    justify-content: space-between;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 10px solid blue;
+  }
+
+  nav ul li {
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
+  }
+  nav ul li:nth-child(4){
+    margin-left: 0;
+  }
+  nav ul li a {
+    margin-left: 40px;
+    font-size: 24px;
+  }
+
+  nav ul.show {
+    display: flex;
+    padding-inline-start: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    padding-right: 32px;
+  }
+
+  .menu-icon.open {
+    font-size: 2rem;
+    margin-right: 4px;
+  }
+
+  #CompanyLogoIcon {
+    margin-left: 1.5rem;
+  }
+}
