@@ -6,6 +6,7 @@
     justify-self: center;
     min-width: 9rem;
     min-height: 3rem;
+    border-radius: 10px;
 }
 
 header{
@@ -38,7 +39,7 @@ nav {
 
 nav ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
   margin: 0;
   align-items: center;
@@ -46,35 +47,87 @@ nav ul {
 }
 
 nav ul li {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
+  position: relative;
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+  padding: .5rem 0;
+  border: 2px solid white;
 }
 
 nav ul li a {
     text-decoration: none;
     color: inherit;
     position: relative; /* Ensure the pseudo-element is positioned relative to the link */
+    align-self: center;
+    padding: .5rem 0;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
 }
 
-/* Add down arrow to Products and About menu items */
-nav ul li:nth-child(2) a::after, /* Products */
-nav ul li:nth-child(3) a::after { /* About */
-    content: '▼'; /* Unicode character for down arrow */
-    font-size: 12px; /* Adjust size as needed */
-    position: absolute;
-    right: -15px; /* Adjust position as needed */
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-nav ul li:nth-child(4){
+#nav-menu li:nth-child(5){
   color: blue;
-  margin-left: 1rem;
 }
 
-@media (max-width: 1200px) {
-  header{
+#nav-menu li {
+  display: flex;
+  justify-content: center;
+}
+
+/* Drop Downs */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-top: 6px solid rgb(0, 191, 255);
+  top: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+.dropdown.show{
+  display: block;
+  padding-inline-start: 0;
+  min-width: 225px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dropdown li {
+  text-align: left;
+  font-weight: normal; 
+  font-size: 12px;
+  border-radius: 0;
+}
+
+.dropdown li a {
+  padding: 1rem;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown li :hover {
+  color: lightblue;
+}
+
+.dropdownarrow{
+  margin-left: 6px;
+  transition: transform .25s ease-in-out;
+}
+
+.dropdownarrow.rotate {
+  transition: transform .25s ease;
+  transform : rotate(180deg);
+}
+
+@media (max-width: 1200px){
+  header {
     justify-content: center;
   }
 }
@@ -96,18 +149,20 @@ nav ul li:nth-child(4){
     border-bottom: 10px solid blue;
   }
 
-  nav ul li {
-    padding: 1rem;
+  nav ul#nav-menu a {
+    padding: 0;
+  }
+  nav ul#nav-menu li {
     width: 100%;
     text-align: left;
+    align-items: start;
+    justify-content: start;
     border: 1px solid hsla(0, 0%, 0%, 0.1);
+    font-size: 24px;
+    padding-left: 80px;
   }
   nav ul li:nth-child(4){
     margin-left: 0;
-  }
-  nav ul li a {
-    margin-left: 40px;
-    font-size: 24px;
   }
 
   nav ul.show {
@@ -127,5 +182,27 @@ nav ul li:nth-child(4){
 
   #CompanyLogoIcon {
     margin-left: 1.5rem;
+  }
+
+  .dropdown {
+    background-color: white;
+    top: 100%;
+    left: 0 !important;
+    position: static;
+    box-shadow: none;
+    border: none;
+  }
+
+  .dropdown.show {
+    display: block;
+    padding-inline-start: 0;
+    box-shadow: none;
+    top: 100%;
+  }
+
+  .dropdown li {
+    padding-left: 0 !important; 
+    box-shadow: none;
+    border: none !important;
   }
 }

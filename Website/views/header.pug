@@ -7,11 +7,47 @@ header
     ul#nav-menu
       li
         a(href="GetAQuote") Get A Quote
-      li
-        a(href="Products") Products
-      li
-        a(href="About") About
+      li#productsdropdown Products
+        include dropdownarrow
+        ul.dropdown#products 
+          li
+            a(href="GeneralLiability") General Liability
+          li
+            a(href="Automotive") Automotive
+          li
+            a(href="CommercialVehicles") Commercial Vehicles
+          li
+            a(href="Home") Home
+          li
+            a(href="Motorcycle") Motorcycle
+      li#aboutsdropdown About
+        include dropdownarrow
+        ul.dropdown#abouts
+          li
+            a(href="OurCompany") Our Company
+          li
+            a(href="OurTeam") Our Team
+          li
+            a(href="CustomerReviews") CustomerReviews
+          li
+            a(href="Español") Español
+
+
+      li#learningcenterdropdown Learning Center
+        include dropdownarrow
+        ul.dropdown#learningcenter
+          li
+            a(href="KnowdlegeBase") Knowledge Base
+          li
+            a(href="InsuranceFAQs") Insurance FAQs
+          li
+            a(href="HelpfulLinks") Helful Links
+          li
+            a(href="Glossary") Glossary
+
       li
         a(href="PhoneNumber") 1-949-836-6193
 
-script(src='/javascripts/menu.js')
+      
+      script(src='/javascripts/menu.js')
+script(src='/javascripts/onclickborder.js')
