@@ -174,22 +174,28 @@ nav ul li a {
   nav ul#nav-menu .dropdownlabel{
     padding-left: 60px;
   }
+  
+  nav ul#nav-menu li:hover{
+    cursor: pointer;
+    .dropdownlabel {
+      color: blue;
+    }
+  }
 
   nav ul#nav-menu li a.dropdownlabel {
     padding-top: .5rem;
     padding-bottom: .5rem;
   }
-  
 
   nav ul#nav-menu li.rawlink {
     padding: 0;
+    :hover {
+      color: blue;
+    }
   }
 
   nav ul #nav-menu li #text {
     padding-left: 80px !important;
-    :hover {
-      cursor: link; 
-    }
   }
 
   nav ul li:nth-child(4){
