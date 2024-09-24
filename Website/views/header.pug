@@ -5,9 +5,10 @@ header
   nav
     .menu-icon#menu-icon &#9776;
     ul#nav-menu
-      li
-        a(href="GetAQuote") Get A Quote
-      li#productsdropdown Products
+      li.rawlink
+        a.dropdownlabel(href="GetAQuote") Get A Quote
+      li#productsdropdown 
+        .dropdownlabel Products
         include dropdownarrow
         ul.dropdown#products 
           li
@@ -20,7 +21,8 @@ header
             a(href="Home") Home
           li
             a(href="Motorcycle") Motorcycle
-      li#aboutsdropdown About
+      li#aboutsdropdown
+        .dropdownlabel About
         include dropdownarrow
         ul.dropdown#abouts
           li
@@ -33,7 +35,8 @@ header
             a(href="Español") Español
 
 
-      li#learningcenterdropdown Learning Center
+      li#learningcenterdropdown 
+        .dropdownlabel Learning Center
         include dropdownarrow
         ul.dropdown#learningcenter
           li
@@ -45,8 +48,9 @@ header
           li
             a(href="Glossary") Glossary
 
-      li
-        a(href="PhoneNumber") 1-949-836-6193
+      li.rawlink
+        a.dropdownlabel(href="PhoneNumber") 1-949-836-6193
+         
 
       
       script(src='/javascripts/menu.js')
