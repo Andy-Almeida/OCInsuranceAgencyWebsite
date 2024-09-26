@@ -1,0 +1,86 @@
+formblock{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50rem;
+  width: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  align-items: start;
+  margin: 2rem;
+  padding: 2rem;
+  border: 2px solid grey;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+formtitle {
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+inputbox {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+inputbox label {
+  font-size: 1.0rem;
+}
+
+inputbox input,
+inputbox textarea,
+inputbox select {
+  border: none;
+  border-bottom: 1px solid grey;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+inputbox textarea {
+  height: 16rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.quotesubmit {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.quotesubmit input {
+  height: 3rem;
+  width: 80%;
+  border-radius: 1rem; 
+  background-color: lightblue;
+  transition: .1s ease-in-out;
+}
+
+.quotesubmit input:hover {
+  background-color: lightgreen;
+}
+
+inputbox select:invalid {
+  color: grey;
+}
+
+inputbox select option:not([disabled]) {
+  color: black;
+}
+
+@media (max-width: 500px){
+  form {
+    border: none;
+    margin:0;
+  }
+}
+

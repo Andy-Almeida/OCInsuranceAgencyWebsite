@@ -5,6 +5,7 @@ footermessage {
   align-items: center;
   width: 100%;
   height: 17rem;
+  background-color: rgb(226, 224, 224);
 }
 
 box {

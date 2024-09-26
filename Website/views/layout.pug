@@ -5,9 +5,10 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    include header
+    include templates/header
     underheader
-    include hero
-    block content
-    include footermessage
-    include footer
+    include templates/hero
+    core
+      block content
+    include templates/footermessage
+    include templates/footer

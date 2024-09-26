@@ -1,0 +1,31 @@
+link(rel='stylesheet' href='/stylesheets/quoteform.css')
+
+formblock
+  form#quoteform(method='post' action='/UserQuoteSubmitted')
+    formtitle Get a Quote!
+    inputbox
+      label(for='name') Your Name:
+      input(type='text' name='name' placeholder='Enter your name' required)
+    inputbox
+      label(for='email') Email:
+      input(type='email' name='email' placeholder='Enter your email address' required)
+    inputbox
+      label(for='phone') Phone:
+      input(type='tel' name='phone' placeholder='Enter your phonenumber' required)
+    inputbox
+      label(for='service') Service:
+      select(name='service' placeholder='Select a subject' required)
+        option(value='' disabled selected) Select a service
+        option(value='General Liability') General Liability
+        option(value='Automotive') Automotive
+        option(value='Commercial Vehicles') Commercial Vehicles
+        option(value='Home') Home
+        option(value='Motorcycle') Motorcycle
+        option(value='Other') Other
+    inputbox
+      label(for='message') Message:
+      textarea#message(name='message' placeholder='Explain your situation' required)
+    submitbox.quotesubmit
+      input(type='submit' value='Submit')
+
+script(src='/javascripts/quotesubmission.js')
