@@ -4,7 +4,6 @@ herobox {
 hero {
   width: 100%;
   height: clamp(36vh, 30vh + 8vw, 43vh);
-  border: 1px solid black;
   background-color: lightblue;
   display: flex;
   
