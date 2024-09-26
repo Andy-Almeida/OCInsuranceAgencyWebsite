@@ -42,7 +42,8 @@ quote {
 
 img {
   height: 100%;
-  width: clamp(36rem , 50vw, 48rem);
+  width: auto;
+  
 }
 
 @media (max-width: 1200px){
@@ -62,7 +63,7 @@ img {
     font-size: 1.5rem;
   }
   img {
-    width: 35rem;
+    width: auto;
     justify-self: center;
   }
 }
