@@ -67,27 +67,27 @@ linkblock linktitle {
 }
 
 iconblock#generalliability {
-  background-image: url('/images/general.png');
+  background-image: url('/images/icons/general.png');
   background-size: cover;
 }
 
 iconblock#automotive {
-  background-image: url('/images/car.png');
+  background-image: url('/images/icons/car.png');
   background-size: cover;
 }
 
 iconblock#commercialvehicles {
-  background-image: url('/images/comercial.png');
+  background-image: url('/images/icons/comercial.png');
   background-size: cover;
 }
 
 iconblock#home {
-  background-image: url('/images/home.png');
+  background-image: url('/images/icons/home.png');
   background-size: cover;
 }
 
 iconblock#motorcycle {
-  background-image: url('/images/motorcycle.png');
+  background-image: url('/images/icons/motorcycle.png');
   background-size: cover;
 }
 
