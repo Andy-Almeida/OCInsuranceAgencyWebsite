@@ -16,9 +16,9 @@ GetFunc('/Automotive', 'contents/index', 'Automotive', HeroPhoneBasic, './images
 GetFunc('/CommercialVehicles', 'contents/index', 'Commercial Vehicles', HeroPhoneBasic, './images/heros/icecreamtruckman.jpg');
 GetFunc('/Home', 'contents/index', 'Home', HeroPhoneBasic, './images/heros/homefall.jpg');
 GetFunc('/Motorcycle', 'contents/index', 'Motorcycle', HeroPhoneBasic, './images/heros/motorcycleview.jpg');
-GetFunc('/OurCompany', 'contents/index', 'Our Company', HeroPhoneBasic, './images/heros/onthephone.jpg');
-GetFunc('/OurTeam', 'contents/index', 'Our Team', HeroPhoneBasic, './images/heros/onthephone.jpg');
-GetFunc('/CustomerReviews', 'contents/index', 'Customer Reviews', HeroPhoneBasic, './images/heros/onthephone.jpg');
+GetFunc('/OurCompany', 'contents/index', 'Our Company', HeroPhoneBasic, './images/heros/twopeoplelaptop.jpg');
+GetFunc('/OurTeam', 'contents/index', 'Our Team', HeroPhoneBasic, './images/heros/theteam.jpg');
+GetFunc('/CustomerReviews', 'contents/index', 'Customer Reviews', HeroPhoneBasic, './images/heros/handshake.jpg');
 GetFunc('/Espanol', 'contents/index', 'Español', HeroPhoneBasic, './images/heros/onthephone.jpg');
 GetFunc('/KnowledgeBase', 'contents/index', 'Knowledge Base', HeroPhoneBasic, './images/heros/onthephone.jpg');
 GetFunc('/InsuranceFAQs', 'contents/index', 'Insurance FAQs', HeroPhoneBasic, './images/heros/onthephone.jpg');

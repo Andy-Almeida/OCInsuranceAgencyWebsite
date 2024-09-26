@@ -1,15 +1,27 @@
+backgroundimage {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
 herobox {
   display:flex;
+
 }
 hero {
   width: 100%;
-  height: clamp(46vh, 25vh + 19vw, 54vh);
-  background-color: lightblue;
+  height: 80vh;
   display: flex;
-  
+  background-color: rgba(255,255,255, 0); 
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 quote {
@@ -25,7 +37,12 @@ quote {
 .quote{
   font-size: 2rem;
   font-weight: 700;
-
+  color:white;
+  text-shadow: 
+    2px 2px 2px rgba(0, 0, 0, 0.5),
+    2px -2px 2px rgba(0, 0, 0, 0.5),
+    -2px 2px 2px rgba(0, 0, 0, 0.5),
+    -2px -2px 2px rgba(0, 0, 0, 0.5);
 }
 .quote.head {
   font-size: 3rem;
@@ -37,48 +54,64 @@ quote {
 .quote,
 .quote.head{
     padding-left: 2rem;
+    text-decoration: none;
 }
 
-img {
+.quote a {
+  color: white;
+  text-decoration: none;
+}
+
+quotecontainer {
   height: 100%;
   width: auto;
-  
+  align-content: center;
 }
 
 @media (max-width: 1200px){
   hero {
-    height: 20rem;
+    height: auto;
   }
 
   quote {
-    width: 26rem;
+    width: 60%;
+    text-align: center;
   }
 
   .quote.head {
-    font-size: 2.5rem;
+    padding: 0;
   }
 
   .quote {
-    font-size: 1.5rem;
+    padding: 0;
   }
-  img {
+  quotecontainer {
     width: auto;
     justify-self: center;
   }
 }
 @media (max-width: 996px){
   hero{
-    display: block;
-    min-height: 0;
-    height: 14rem;
+    height: auto;
+    flex-direction: column;
   }
   quote{
+    align-content: center;
     position: static;
-    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
   }
 
-  img{
-    display: none;
+  quotecontainer {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 500px){
+  quote{
+    width: 90%;
   }
 }
 
