@@ -166,8 +166,8 @@ nav ul li a {
     left: 0;
     width: 100%;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-bottom: 10px solid blue;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    border-bottom: 8px solid lightblue;
   }
 
   nav ul#nav-menu a {
@@ -180,7 +180,7 @@ nav ul li a {
     justify-content: start;
     border: 1px solid hsla(0, 0%, 0%, 0.1);
     font-size: 24px;
-
+    border-radius: 0;
     
   }
 
