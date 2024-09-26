@@ -19,10 +19,32 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/GetAQuote', indexRouter)
-app.use('/UserQuoteSubmitted', indexRouter)
-//app.use('/users', usersRouter);
+function RoutingPaths(paths) {
+  paths.forEach(path => {
+    app.use(path, indexRouter);
+  });
+}
+
+var paths = [
+  '/',
+  '/GetAQuote',
+  '/GeneralLiability',
+  '/UserQuoteSubmitted',
+  '/Automotive',
+  '/CommercialVehicles',
+  '/Home',
+  '/Motorcycle',
+  '/OurCompany',
+  '/OurTeam',
+  '/CustomerReviews',
+  '/Espanol',
+  '/KnowledgeBase',
+  '/InsuranceFAQs',
+  '/HelpfulLinks',
+  '/Glossary'
+]
+
+RoutingPaths(paths);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
