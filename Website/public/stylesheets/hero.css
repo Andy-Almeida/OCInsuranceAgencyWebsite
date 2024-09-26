@@ -3,7 +3,7 @@ herobox {
 }
 hero {
   width: 100%;
-  height: clamp(36vh, 30vh + 8vw, 43vh);
+  height: clamp(46vh, 25vh + 19vw, 54vh);
   background-color: lightblue;
   display: flex;
   
