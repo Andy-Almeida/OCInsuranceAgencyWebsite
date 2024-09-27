@@ -8,11 +8,13 @@ core{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  height: auto;
 }
 
 /* Index Middles Links */
 products {
-  background-color: lightgray;
+  background-color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -160,5 +162,46 @@ iconblock#motorcycle {
     margin-left: 1rem;
     text-align: left;
   }
+}
+
+/* MainBlock - Text Heavy */
+mainblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+contentblock {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  padding: 4rem 0rem;
+}
+
+.maintextheader,
+.maintextbody {
+  text-align: start;
+}
+
+.maintextheader {
+  font-size: 2rem;
+}
+
+.maintextsubheader {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.maintextbody {
+  margin-top: .5rem;
+  font-size: .9rem;
+  letter-spacing: 1px;
 }
 

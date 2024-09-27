@@ -5,7 +5,6 @@ formblock{
   height: 50rem;
   width: 100%;
   z-index: 1;
-  background-color: white;
 }
 
 form{
@@ -15,14 +14,15 @@ form{
   align-items: start;
   margin: 2rem;
   padding: 2rem;
-  background-color: rgba(173, 216, 230, 0.9);
+  background-color: rgba(69, 69, 69, 0.7);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 formtitle {
   font-size: 1.5rem;
   align-self: center;
+  color: white;
 }
 
 inputbox {
@@ -66,13 +66,13 @@ inputbox textarea {
   height: 3rem;
   width: 80%;
   border-radius: 1rem; 
-  background-color: lightblue;
+  background-color: white;
   transition: .1s ease-in-out;
   font-size: 1.5rem;
 }
 
 .quotesubmit input:hover {
-  background-color: lightgreen;
+  background-color: #EA8805;
 }
 
 inputbox select:invalid {

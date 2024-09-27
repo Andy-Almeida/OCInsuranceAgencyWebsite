@@ -11,11 +11,11 @@ function GetFunc(path, view, herohead, herosub, heroimg) {
 
 GetFunc('/', 'contents/index', 'World-Class Service Since 1984', HeroPhoneBasic, './images/heros/sunsetfour.jpg');
 GetFunc('/GetAQuote', 'contents/getaquote', 'Get in contact with us!', HeroPhoneBasic, './images/heros/onthephone.jpg');
-GetFunc('/GeneralLiability', 'contents/index', 'General Liability', HeroPhoneBasic, './images/heros/coffeehands.jpg');
-GetFunc('/Automotive', 'contents/index', 'Automotive', HeroPhoneBasic, './images/heros/desertcarman.jpg');
-GetFunc('/CommercialVehicles', 'contents/index', 'Commercial Vehicles', HeroPhoneBasic, './images/heros/icecreamtruckman.jpg');
-GetFunc('/Home', 'contents/index', 'Home', HeroPhoneBasic, './images/heros/homefall.jpg');
-GetFunc('/Motorcycle', 'contents/index', 'Motorcycle', HeroPhoneBasic, './images/heros/motorcycleview.jpg');
+GetFunc('/GeneralLiability', 'contents/generalliability', 'General Liability', HeroPhoneBasic, './images/heros/coffeehands.jpg');
+GetFunc('/Automotive', 'contents/automotive', 'Automotive', HeroPhoneBasic, './images/heros/desertcarman.jpg');
+GetFunc('/CommercialVehicles', 'contents/commercialvehicles', 'Commercial Vehicles', HeroPhoneBasic, './images/heros/icecreamtruckman.jpg');
+GetFunc('/Home', 'contents/home', 'Home', HeroPhoneBasic, './images/heros/homefall.jpg');
+GetFunc('/Motorcycle', 'contents/motorcycle', 'Motorcycle', HeroPhoneBasic, './images/heros/motorcycleview.jpg');
 GetFunc('/OurCompany', 'contents/index', 'Our Company', HeroPhoneBasic, './images/heros/twopeoplelaptop.jpg');
 GetFunc('/OurTeam', 'contents/index', 'Our Team', HeroPhoneBasic, './images/heros/theteam.jpg');
 GetFunc('/CustomerReviews', 'contents/index', 'Customer Reviews', HeroPhoneBasic, './images/heros/handshake.jpg');

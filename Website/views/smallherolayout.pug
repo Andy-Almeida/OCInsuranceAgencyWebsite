@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    backgroundimage(style=`background-image: url(${heroimg})`)
+    include templates/header
+    underheader
+    include templates/smallhero
+    core
+      block content
+    include templates/quoteblock
+    include templates/footermessage
+    include templates/footer
