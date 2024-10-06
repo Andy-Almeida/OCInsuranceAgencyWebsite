@@ -2,7 +2,7 @@ formblock{
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 50rem;
+  height: 42rem;
   width: 100%;
   z-index: 1;
 }
@@ -13,14 +13,15 @@ form{
   width: 30rem;
   align-items: start;
   margin: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: rgba(69, 69, 69, 0.7);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 
 formtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
   align-self: center;
   color: white;
 }
@@ -49,7 +50,7 @@ inputbox select {
 }
 
 inputbox textarea {
-  height: 16rem;
+  height: 12rem;
   font-size: 1.2rem;
   font-family: inherit;
 }
@@ -69,6 +70,7 @@ inputbox textarea {
   background-color: white;
   transition: .1s ease-in-out;
   font-size: 1.5rem;
+  color: black;
 }
 
 .quotesubmit input:hover {

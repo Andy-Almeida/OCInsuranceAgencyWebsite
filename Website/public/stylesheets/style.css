@@ -134,10 +134,11 @@ iconblock#motorcycle {
 
 @media (max-width: 450px){
   products {
-    height: 26rem;
+    height: 33rem;
   }
   productslinks {
     width: 20rem;
+    margin-bottom: 3rem;
     flex-direction: column;
   }
 
@@ -148,6 +149,7 @@ iconblock#motorcycle {
   }
 
   linkblock {
+    margin-top: 1rem;
     width: 100%;
   }
 
@@ -161,6 +163,7 @@ iconblock#motorcycle {
     margin-top: 0;
     margin-left: 1rem;
     text-align: left;
+    font-size: 1.2rem;
   }
 }
 
@@ -199,9 +202,122 @@ contentblock {
   font-size: 1.8rem;
 }
 
-.maintextbody {
+.maintextbody,
+.teammembername,
+.teammembertitle {
   margin-top: .5rem;
-  font-size: .9rem;
+  line-height: 1.5;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
+mainblock contentblock .maintextbody ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+mainblock contentblock .maintextbody ul li {
+  margin-top: 1rem;
+}
+
+.meettheteamblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #F5F5F5;
+}
+
+.meettheteamblock .mttheader {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.meettheteamblock .mttblock {
+  margin-top: 1rem;
+  width: 90%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.meettheteamblock .mttblock .teammember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 10rem;
+  height: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.meettheteamblock .mttblock .teammember img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.learningcenter {
+  align-self: center;
+  align-items: center;
+}
+
+.maintextheader.learningcenter {
+  margin-bottom: 2rem;
+}
+contentblock learningcenter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height: 16rem;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+learningcenter .learningcenterblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 16rem;
+  height: 90%;
+  margin: 0 1rem;
+  border: 4px #34A334 solid;
+  border-radius: 14px;
+}
+
+learningcenter .learningcenterblock .learningcenterheader {
+  font-size: 2.0rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+learningcenter .learningcenterblock .learningcenterbody {
+  font-size: 1rem;
+  width: 90%;
+  text-align: center;
+}
+
+learningcenter .learningcenterblock a {
+  height: 3rem;
+  width: 11rem;
+  border-radius: 1rem; 
+  background-color: #34A334;
+  align-content: center;
+  text-align: center;
+  transition: .1s ease-in-out;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+learningcenter .learningcenterblock a:hover {
+  background-color: #EA8805;
+}
