@@ -49,8 +49,7 @@ router.post('/UserQuoteSubmitted', function (req, res, next) {
       console.error('Error sending email:', error);
       return res.status(500).json({ message: `An error occurred. Please try again later:${error}` });
     }
-    console.log('Email sent: ' + info.response);
-    res.status(200).json({ message: 'Form submitted successfully!' });
+    res.status(200).redirect('/');
   });
 });
 
