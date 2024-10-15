@@ -38,6 +38,8 @@ footer links ul li{
 
 li.header {
   color:black;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 a {
