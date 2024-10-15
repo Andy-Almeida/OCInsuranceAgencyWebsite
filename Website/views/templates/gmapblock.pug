@@ -1,0 +1,32 @@
+script(async src=`https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLEMAPSAPIKEY}&callback=console.debug&libraries=maps,marker&v=beta`)
+
+businessinfoblock
+  businessinfo
+    infoblock
+      a.infoicon
+        img#LocationIcon(src="/images/icons/location.png")
+      infotext
+        .infotextheader Location
+        a.infotextsubheader(href="https://www.google.com/maps/place/O+C+Insurance/@33.7461218,-117.8488777,1841m/data=!3m3!1e3!4b1!5s0x80dcd971ca2c7f51:0x81250e57e03d97a8!4m6!3m5!1s0x80dcd971cead3fd7:0x141964d85e3ce530!8m2!3d33.7461218!4d-117.8463028!16s%2Fg%2F1tm88r2f?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D") 1617 E 1st St F,<br>Santa Ana,<br>CA 92701
+    infoblock
+      a.infoicon
+        img#HoursIcon(src="/images/icons/clock.png")
+      infotext
+        .infotextheader Hours
+        .infotextsubheader Mon-Fri: 9am-5pm
+    infoblock
+      a.infoicon
+        img#PhoneIcon(src="/images/icons/telephone.png")
+      infotext
+        .infotextheader Phone
+        .infotextsubheader (949) 555-1234
+    infoblock
+      a.infoicon
+        img#EmailIcon(src="/images/icons/email.png")
+      infotext
+        .infotextheader Email
+        .infotextsubheader andyalmeida191@gmail.com
+    
+  map
+    gmp-map(center="33.74613571166992,-117.84611511230469" zoom="14" map-id="DEMO_MAP_ID")
+      gmp-advanced-marker(position="33.74613571166992,-117.84611511230469" title="My location")
