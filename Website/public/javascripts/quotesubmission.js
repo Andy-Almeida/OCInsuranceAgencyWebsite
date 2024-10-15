@@ -14,10 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (data.message) {
         // Show a notification
         alert(data.message);
-        console.log("FormDataItem stuff:");
-        console.log(formDataItem);
-        console.log(data.message);
-        //window.location.href = '/'; // Redirect to the homepage
+        window.location.href = '/'; // Redirect to the homepage
       } else {
         console.error('Form submission failed');
       }
