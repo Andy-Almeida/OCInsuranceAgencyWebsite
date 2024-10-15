@@ -1,8 +1,8 @@
+
 #CompanyLogoIcon {
-    width: 12rem;
-    height: 4rem;
-    margin-bottom: 1rem;
-    background-image: url('../images/icons/OCInsuranceAgencyLogo.PNG');
+    width: 18rem;
+    height: 5rem;
+    background-image: url('../images/icons/OCInsuranceAgencyLogoWithMessage.png');
     background-repeat: no-repeat;
     background-size: cover;
     justify-self: center;
@@ -11,12 +11,16 @@
     border-radius: 10px;
 }
 
+#CompanyLogoMessage {
+  color: #004DFF;
+}
+
 header{
   position:fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 6rem;
+  height: 7rem;
   background-color: white;
   z-index: 1000;
   display: flex;
@@ -48,11 +52,12 @@ nav {
 
 nav ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: .8fr .8fr .8fr .8fr .8fr;
   list-style-type: none;
   margin: 0;
   align-items: center;
   justify-content: center;
+  padding-inline-start: 0;
 }
 
 nav ul li {
@@ -61,7 +66,7 @@ nav ul li {
   text-align: center;
   text-wrap: nowrap;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   border-radius: 10px;
   justify-content: center;
@@ -72,7 +77,7 @@ nav ul li {
 
 nav ul li:hover {
   cursor: pointer;
-  color: #EA8805;
+  color: #004DFF;
 }
 
 nav ul li a {
@@ -98,7 +103,7 @@ nav ul li a {
   display: none;
   position: absolute;
   background-color: white;
-  border-top: 6px solid #EA8805;
+  border-top: 6px solid #004DFF;
   top: 100%;
   left: 0;
   z-index: 100;
@@ -147,9 +152,20 @@ nav ul li a {
   flex-wrap: nowrap;
 }
 
+@media (max-width: 1300px){
+  nav ul li {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 1200px){
   header {
     justify-content: center;
+  }
+  
+  #CompanyLogoIcon {
+    width: 15.8rem;
+    height: 4.25rem;
   }
 }
 
@@ -167,7 +183,7 @@ nav ul li a {
     width: 100%;
     background-color: white;
     box-shadow: 0 4px 4px rgba(0,0,0,0.2);
-    border-bottom: 8px solid #EA8805;
+    border-bottom: 8px solid #004DFF;
   }
 
   nav ul#nav-menu a {
@@ -191,14 +207,8 @@ nav ul li a {
   nav ul#nav-menu li:hover{
     cursor: pointer;
     .dropdownlabel {
-      color: #FDDBAF;
+      color: #004DFF;
     }
-  }
-
-  nav ul#nav-menu li a.dropdownlabel,
-  nav ul#nav-menu li.rawlink {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
   }
 
   nav ul #nav-menu li #text {
